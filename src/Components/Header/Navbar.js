@@ -6,12 +6,14 @@ import { useState } from "react";
 import logo from "../../assets/Images/logo.png";
 
 const Nav = styled.nav`
+  position: fixed;
   display: flex;
   width: 100%;
   height: 77px;
   justify-content: center;
   align-items: center;
   background-color: #6b3cc9;
+  z-index: 10;
 
   .nav-box {
     height: 36.11px;

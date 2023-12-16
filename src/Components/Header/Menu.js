@@ -31,7 +31,7 @@ const Ul = styled.ul`
     transform: ${({ openDrawer }) =>
       openDrawer ? `translateX(0%)` : `translateX(100%)`};
     right: 0;
-    top: 15px;
+    top: 0;
     height: 100vh;
     width: 375px;
     li {

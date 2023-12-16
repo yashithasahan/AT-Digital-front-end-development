@@ -7,7 +7,7 @@ const Hero = styled.div`
     position: relative;
     img {
       width: 100%;
-      margin: 0;
+      margin-top: 77px;
       padding: 0;
     }
   }
