@@ -3,8 +3,8 @@ const TopicSection = (props) => {
     <div className="section-topics">
       <h1>{props.children}</h1>
       <ul>
-        {props.list.map((item) => (
-          <li>{item}</li>
+        {props.list.map((item, index) => (
+          <li key={index}>{item}</li>
         ))}
       </ul>
     </div>

@@ -28,8 +28,8 @@ const Ul = styled.ul`
     background-color: #6b3cc9;
     position: fixed;
     transition: 0.3s ease-in-out;
-    transform: ${({ openDrawer }) =>
-      openDrawer ? `translateX(0%)` : `translateX(100%)`};
+    transform: ${({ opendrawer }) =>
+      opendrawer ? `translateX(0%)` : `translateX(100%)`};
     right: 0;
     top: 0;
     height: 100vh;
@@ -41,7 +41,7 @@ const Ul = styled.ul`
 `;
 const Menu = (props) => {
   return (
-    <Ul openDrawer={props.openDrawer}>
+    <Ul opendrawer={props.openrawer}>
       <li>SERVICE</li>
       <li>ABOUT US</li>
       <li>CONTACT US</li>

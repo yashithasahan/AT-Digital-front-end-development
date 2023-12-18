@@ -18,29 +18,29 @@ const BurgerIcon = styled.div`
   div {
     width: 2rem;
     height: 0.25rem;
-    background-color: ${({ openDrawer }) => (openDrawer ? `black` : `white`)};
+    background-color: ${({ opendrawer }) => (opendrawer ? `black` : `white`)};
     border-radius: 8px;
     transform-origin: 1px;
     transition: all 0.3s linear;
 
     &:nth-child(1) {
-      transform: ${({ openDrawer }) =>
-        openDrawer ? `rotate(45deg)` : `rotate(0)`};
+      transform: ${({ opendrawer }) =>
+        opendrawer ? `rotate(45deg)` : `rotate(0)`};
     }
     &:nth-child(2) {
-      transform: ${({ openDrawer }) =>
-        openDrawer ? `translateX(-100%)` : `translateX(0)`};
-      opacity: ${({ openDrawer }) => (openDrawer ? 0 : 1)};
+      transform: ${({ opendrawer }) =>
+        opendrawer ? `translateX(-100%)` : `translateX(0)`};
+      opacity: ${({ opendrawer }) => (opendrawer ? 0 : 1)};
     }
     &:nth-child(3) {
-      transform: ${({ openDrawer }) =>
-        openDrawer ? `rotate(-45deg)` : `rotate(0)`};
+      transform: ${({ opendrawer }) =>
+        opendrawer ? `rotate(-45deg)` : `rotate(0)`};
     }
   }
 `;
 const Burger = (props) => {
   return (
-    <BurgerIcon openDrawer={props.openDrawer} onClick={props.toggleDrawer}>
+    <BurgerIcon opendrawer={props.opendrawer} onClick={props.toggleDrawer}>
       <div />
       <div />
       <div />

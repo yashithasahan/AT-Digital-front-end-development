@@ -49,7 +49,7 @@ const Navbar = () => {
     <Nav>
       <div className="nav-box">
         <img src={logo} alt="AT Digital Logo"></img>
-        <Menu openDrawer={openDrawer} />
+        <Menu opendrawer={openDrawer} />
         <Burger toggleDrawer={toggleDrawer} openDrawer={openDrawer} />
       </div>
     </Nav>
